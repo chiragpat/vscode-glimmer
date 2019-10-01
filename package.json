@@ -4,6 +4,10 @@
     "description": "VSCode extension for glimmer",
     "version": "0.0.1",
     "license": "MIT",
+    "publisher": "chiragpat",
+    "repository": {
+        "url": "https://github.com/chiragpat/vscode-glimmer"
+    },
     "author": {
         "name": "Chirag Patel"
     },
