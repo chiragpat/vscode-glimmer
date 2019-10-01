@@ -1,0 +1,31 @@
+{
+    "name": "vscode-glimmer",
+    "displayName": "vscode-glimmer",
+    "description": "VSCode extension for glimmer",
+    "version": "0.0.1",
+    "license": "MIT",
+    "author": {
+        "name": "Chirag Patel"
+    },
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "grammars": [
+            {
+                "injectTo": [
+                    "source.js",
+                    "source.ts"
+                ],
+                "scopeName": "inline.hbs",
+                "path": "./syntaxes/inline-hbs.json",
+                "embeddedLanguages": {
+                    "meta.embedded.block.html": "text.html.handlebars"
+                }
+            }
+        ]
+    }
+}
