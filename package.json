@@ -18,6 +18,20 @@
         "Programming Languages"
     ],
     "contributes": {
+        "languages": [
+            {
+                "id": "javascript",
+                "extensions": [
+                    ".gjs"
+                ]
+            },
+            {
+                "id": "typescript",
+                "extensions": [
+                    ".gts"
+                ]
+            }
+        ],
         "grammars": [
             {
                 "injectTo": [
@@ -26,6 +40,17 @@
                 ],
                 "scopeName": "inline.hbs",
                 "path": "./syntaxes/inline-hbs.json",
+                "embeddedLanguages": {
+                    "meta.embedded.block.html": "text.html.handlebars"
+                }
+            },
+            {
+                "injectTo": [
+                    "source.js",
+                    "source.ts"
+                ],
+                "scopeName": "inline.template",
+                "path": "./syntaxes/inline-template.json",
                 "embeddedLanguages": {
                     "meta.embedded.block.html": "text.html.handlebars"
                 }
