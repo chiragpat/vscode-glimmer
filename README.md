@@ -5,9 +5,20 @@ VSCode extension for glimmer js components.
 ## Features
 
 ### Syntax Highlighting
-This extension adds supports for syntax highlighting inside hbs literal strings. It injects the grammar into the existing typescript and javascript grammars.
 
-![](https://github.com/chiragpat/vscode-glimmer/raw/master/images/syntax-highlighting.png)
+This extension adds syntax highlighting for embedded Glimmer templates in
+JavaScript and TypeScript. It supports two types of embedded template syntaxes:
+
+1. Template strings, using `hbs` to denote that they are Handlebars templates:
+
+  ![template strings demo](https://github.com/chiragpat/vscode-glimmer/raw/master/images/template-string.png)
+
+2. Template tags, using a custom `<template>` syntax
+
+  ![template tag demo](https://github.com/chiragpat/vscode-glimmer/raw/master/images/template-tag.png)
+
+It also adds support for the `.gjs` and `.gts` file extensions, which are
+aliases to JavaScript and TypeScript respectively.
 
 Note: Syntax highlighting for handlebars requires installing the [Handlebars VSCode extension](https://marketplace.visualstudio.com/items?itemName=andrejunges.Handlebars)
 
