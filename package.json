@@ -2,7 +2,7 @@
     "name": "vscode-glimmer",
     "displayName": "vscode-glimmer",
     "description": "VSCode extension for glimmer",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "license": "MIT",
     "publisher": "chiragpat",
     "repository": {
