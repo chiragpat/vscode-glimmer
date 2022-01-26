@@ -23,11 +23,13 @@
                 "id": "glimmer-js",
                 "aliases": ["Glimmer JS"],
                 "extensions": [".gjs"],
+                "configuration": "./languages/inline-template.json"
             },
             {
                 "id": "glimmer-ts",
                 "aliases": ["Glimmer TS"],
                 "extensions": [".gts"],
+                "configuration": "./languages/inline-template.json"
             }
         ],
         "grammars": [
