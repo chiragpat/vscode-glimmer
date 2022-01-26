@@ -20,19 +20,33 @@
     "contributes": {
         "languages": [
             {
-                "id": "javascript",
-                "extensions": [
-                    ".gjs"
-                ]
+                "id": "glimmer-js",
+                "aliases": ["Glimmer JS"],
+                "extensions": [".gjs"],
             },
             {
-                "id": "typescript",
-                "extensions": [
-                    ".gts"
-                ]
+                "id": "glimmer-ts",
+                "aliases": ["Glimmer TS"],
+                "extensions": [".gts"],
             }
         ],
         "grammars": [
+            {
+                "language": "glimmer-js",
+                "path": "./syntaxes/glimmer-js.json",
+                "scopeName": "source.gjs",
+                "embeddedLanguages": {
+                    "source.gjs": "javascript"
+                }
+            },
+            {
+                "language": "glimmer-ts",
+                "path": "./syntaxes/glimmer-ts.json",
+                "scopeName": "source.gts",
+                "embeddedLanguages": {
+                    "source.gts": "typescript"
+                }
+            },
             {
                 "injectTo": [
                     "source.js",
