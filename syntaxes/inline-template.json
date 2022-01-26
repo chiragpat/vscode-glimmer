@@ -1,6 +1,6 @@
 {
   "fileTypes": [],
-  "injectionSelector": "L:source.js -comment, L:source.ts -comment",
+  "injectionSelector": "L:source.gjs -comment, L:source.gts -comment",
   "patterns": [
     {
       "name": "meta.js.embeddedTemplateWithoutArgs",
@@ -61,27 +61,27 @@
         {
           "begin": "(?<=\\<template)",
           "end": "(?=\\>)",
-					"patterns": [
-						{
-							"include": "text.html.handlebars#tag-stuff"
-						}
-					]
+          "patterns": [
+            {
+              "include": "text.html.handlebars#tag-stuff"
+            }
+          ]
         },
         {
-					"begin": "(>)",
-					"beginCaptures": {
-						"1": {
-							"name": "punctuation.definition.tag.end.js"
-						}
-					},
-					"end": "(?=</template>)",
-					"contentName": "meta.html.embedded.block",
-					"patterns": [
-						{
-							"include": "text.html.handlebars"
-						}
-					]
-				}
+          "begin": "(>)",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.definition.tag.end.js"
+            }
+          },
+          "end": "(?=</template>)",
+          "contentName": "meta.html.embedded.block",
+          "patterns": [
+            {
+              "include": "text.html.handlebars"
+            }
+          ]
+        }
       ]
     }
   ],

@@ -59,14 +59,12 @@
                 }
             },
             {
-                "injectTo": [
-                    "source.js",
-                    "source.ts"
-                ],
+                "injectTo": ["source.gts", "source.gjs"],
                 "scopeName": "inline.template",
                 "path": "./syntaxes/inline-template.json",
                 "embeddedLanguages": {
-                    "meta.embedded.block.html": "text.html.handlebars"
+                    "meta.js.embeddedTemplateWithoutArgs": "handlebars",
+                    "meta.js.embeddedTemplateWithArgs": "handlebars"
                 }
             }
         ]
