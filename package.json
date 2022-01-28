@@ -20,19 +20,35 @@
     "contributes": {
         "languages": [
             {
-                "id": "javascript",
-                "extensions": [
-                    ".gjs"
-                ]
+                "id": "glimmer-js",
+                "aliases": ["Glimmer JS"],
+                "extensions": [".gjs"],
+                "configuration": "./languages/inline-template.json"
             },
             {
-                "id": "typescript",
-                "extensions": [
-                    ".gts"
-                ]
+                "id": "glimmer-ts",
+                "aliases": ["Glimmer TS"],
+                "extensions": [".gts"],
+                "configuration": "./languages/inline-template.json"
             }
         ],
         "grammars": [
+            {
+                "language": "glimmer-js",
+                "path": "./syntaxes/glimmer-js.json",
+                "scopeName": "source.gjs",
+                "embeddedLanguages": {
+                    "source.gjs": "javascript"
+                }
+            },
+            {
+                "language": "glimmer-ts",
+                "path": "./syntaxes/glimmer-ts.json",
+                "scopeName": "source.gts",
+                "embeddedLanguages": {
+                    "source.gts": "typescript"
+                }
+            },
             {
                 "injectTo": [
                     "source.js",
@@ -45,14 +61,12 @@
                 }
             },
             {
-                "injectTo": [
-                    "source.js",
-                    "source.ts"
-                ],
+                "injectTo": ["source.gts", "source.gjs"],
                 "scopeName": "inline.template",
                 "path": "./syntaxes/inline-template.json",
                 "embeddedLanguages": {
-                    "meta.embedded.block.html": "text.html.handlebars"
+                    "meta.js.embeddedTemplateWithoutArgs": "handlebars",
+                    "meta.js.embeddedTemplateWithArgs": "handlebars"
                 }
             }
         ]
