@@ -23,13 +23,21 @@
                 "id": "glimmer-js",
                 "aliases": ["Glimmer JS"],
                 "extensions": [".gjs"],
-                "configuration": "./languages/inline-template.json"
+                "configuration": "./languages/inline-template.json",
+                "icon": {
+                  "light": "./images/glimmer-light.svg",
+                  "dark": "./images/glimmer-dark.svg"
+                }
             },
             {
                 "id": "glimmer-ts",
                 "aliases": ["Glimmer TS"],
                 "extensions": [".gts"],
-                "configuration": "./languages/inline-template.json"
+                "configuration": "./languages/inline-template.json",
+                "icon": {
+                  "light": "./images/glimmer-light.svg",
+                  "dark": "./images/glimmer-dark.svg"
+                }
             }
         ],
         "grammars": [
