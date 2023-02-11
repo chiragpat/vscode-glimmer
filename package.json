@@ -25,8 +25,8 @@
                 "extensions": [".gjs"],
                 "configuration": "./languages/inline-template.json",
                 "icon": {
-                  "light": "./images/glimmer-light.svg",
-                  "dark": "./images/glimmer-dark.svg"
+                  "light": "./images/glimmer.svg",
+                  "dark": "./images/glimmer.svg"
                 }
             },
             {
@@ -35,8 +35,8 @@
                 "extensions": [".gts"],
                 "configuration": "./languages/inline-template.json",
                 "icon": {
-                  "light": "./images/glimmer-light.svg",
-                  "dark": "./images/glimmer-dark.svg"
+                  "light": "./images/glimmer.svg",
+                  "dark": "./images/glimmer.svg"
                 }
             }
         ],
