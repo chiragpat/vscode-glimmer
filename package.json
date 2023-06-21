@@ -40,10 +40,10 @@
                 }
             },
             {
-              "id": "gjs-markdown"
+              "id": "markdown-gjs"
             },
             {
-              "id": "gts-markdown"
+              "id": "markdown-gts"
             }
         ],
         "grammars": [
@@ -84,9 +84,9 @@
                 }
             },
             {
-              "language": "gjs-markdown",
+              "language": "markdown-gjs",
               "scopeName": "markdown.gjs.codeblock",
-              "path": "./syntaxes/gjs-markdown.json",
+              "path": "./syntaxes/markdown-gjs.json",
               "injectTo": [
                 "text.html.markdown"
               ],
@@ -95,9 +95,9 @@
               }
             },
             {
-              "language": "gts-markdown",
+              "language": "markdown-gts",
               "scopeName": "markdown.gts.codeblock",
-              "path": "./syntaxes/gts-markdown.json",
+              "path": "./syntaxes/markdown-gts.json",
               "injectTo": [
                 "text.html.markdown"
               ],
