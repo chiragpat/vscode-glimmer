@@ -41,6 +41,9 @@
             },
             {
               "id": "gjs-markdown"
+            },
+            {
+              "id": "gts-markdown"
             }
         ],
         "grammars": [
@@ -89,6 +92,17 @@
               ],
               "embeddedLanguages": {
                 "meta.embedded.block.gjs": "glimmer-js"
+              }
+            },
+            {
+              "language": "gts-markdown",
+              "scopeName": "markdown.gts.codeblock",
+              "path": "./syntaxes/gts-markdown.json",
+              "injectTo": [
+                "text.html.markdown"
+              ],
+              "embeddedLanguages": {
+                "meta.embedded.block.gjs": "glimmer-ts"
               }
             }
         ]
