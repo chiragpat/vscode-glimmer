@@ -38,6 +38,9 @@
                   "light": "./images/glimmer.svg",
                   "dark": "./images/glimmer.svg"
                 }
+            },
+            {
+              "id": "gjs-markdown"
             }
         ],
         "grammars": [
@@ -76,6 +79,17 @@
                     "meta.js.embeddedTemplateWithoutArgs": "handlebars",
                     "meta.js.embeddedTemplateWithArgs": "handlebars"
                 }
+            },
+            {
+              "language": "gjs-markdown",
+              "scopeName": "markdown.gjs.codeblock",
+              "path": "./syntaxes/gjs-markdown.json",
+              "injectTo": [
+                "text.html.markdown"
+              ],
+              "embeddedLanguages": {
+                "meta.embedded.block.gjs": "glimmer-js"
+              }
             }
         ]
     },
