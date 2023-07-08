@@ -38,6 +38,12 @@
                   "light": "./images/glimmer.svg",
                   "dark": "./images/glimmer.svg"
                 }
+            },
+            {
+              "id": "markdown-gjs"
+            },
+            {
+              "id": "markdown-gts"
             }
         ],
         "grammars": [
@@ -76,6 +82,28 @@
                     "meta.js.embeddedTemplateWithoutArgs": "handlebars",
                     "meta.js.embeddedTemplateWithArgs": "handlebars"
                 }
+            },
+            {
+              "language": "markdown-gjs",
+              "scopeName": "markdown.gjs.codeblock",
+              "path": "./syntaxes/markdown-gjs.json",
+              "injectTo": [
+                "text.html.markdown"
+              ],
+              "embeddedLanguages": {
+                "meta.embedded.block.gjs": "glimmer-js"
+              }
+            },
+            {
+              "language": "markdown-gts",
+              "scopeName": "markdown.gts.codeblock",
+              "path": "./syntaxes/markdown-gts.json",
+              "injectTo": [
+                "text.html.markdown"
+              ],
+              "embeddedLanguages": {
+                "meta.embedded.block.gjs": "glimmer-ts"
+              }
             }
         ]
     },
