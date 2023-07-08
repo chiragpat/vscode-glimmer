@@ -1,6 +1,6 @@
 {
   "fileTypes": [],
-  "injectionSelector": "L:source.gjs -comment, L:source.gts -comment",
+  "injectionSelector": "L:source.gjs -comment -string, L:source.gts -comment -string",
   "patterns": [
     {
       "name": "meta.js.embeddedTemplateWithoutArgs",
