@@ -6,78 +6,103 @@
     "license": "MIT",
     "publisher": "chiragpat",
     "repository": {
-        "url": "https://github.com/chiragpat/vscode-glimmer"
+      "url": "https://github.com/chiragpat/vscode-glimmer"
     },
     "author": {
-        "name": "Chirag Patel"
+      "name": "Chirag Patel"
     },
     "engines": {
-        "vscode": "^1.38.0"
+      "vscode": "^1.38.0"
     },
     "categories": [
-        "Programming Languages"
+      "Programming Languages"
     ],
     "contributes": {
-        "languages": [
-            {
-                "id": "glimmer-js",
-                "aliases": ["Glimmer JS"],
-                "extensions": [".gjs"],
-                "configuration": "./languages/inline-template.json",
-                "icon": {
-                  "light": "./images/glimmer.svg",
-                  "dark": "./images/glimmer.svg"
-                }
-            },
-            {
-                "id": "glimmer-ts",
-                "aliases": ["Glimmer TS"],
-                "extensions": [".gts"],
-                "configuration": "./languages/inline-template.json",
-                "icon": {
-                  "light": "./images/glimmer.svg",
-                  "dark": "./images/glimmer.svg"
-                }
-            }
-        ],
-        "grammars": [
-            {
-                "language": "glimmer-js",
-                "path": "./syntaxes/glimmer-js.json",
-                "scopeName": "source.gjs",
-                "embeddedLanguages": {
-                    "source.gjs": "javascript"
-                }
-            },
-            {
-                "language": "glimmer-ts",
-                "path": "./syntaxes/glimmer-ts.json",
-                "scopeName": "source.gts",
-                "embeddedLanguages": {
-                    "source.gts": "typescript"
-                }
-            },
-            {
-                "injectTo": [
-                    "source.js",
-                    "source.ts"
-                ],
-                "scopeName": "inline.hbs",
-                "path": "./syntaxes/inline-hbs.json",
-                "embeddedLanguages": {
-                    "meta.embedded.block.html": "text.html.handlebars"
-                }
-            },
-            {
-                "injectTo": ["source.gts", "source.gjs"],
-                "scopeName": "inline.template",
-                "path": "./syntaxes/inline-template.json",
-                "embeddedLanguages": {
-                    "meta.js.embeddedTemplateWithoutArgs": "handlebars",
-                    "meta.js.embeddedTemplateWithArgs": "handlebars"
-                }
-            }
-        ]
+      "languages": [
+        {
+          "id": "glimmer-js",
+          "aliases": [
+            "Glimmer JS",
+            "gjs"
+          ],
+          "extensions": [
+            ".gjs"
+          ],
+          "configuration": "./languages/inline-template.json",
+          "icon": {
+            "light": "./images/glimmer.svg",
+            "dark": "./images/glimmer.svg"
+          }
+        },
+        {
+          "id": "glimmer-ts",
+          "aliases": [
+            "Glimmer TS",
+            "gts"
+          ],
+          "extensions": [
+            ".gts"
+          ],
+          "configuration": "./languages/inline-template.json",
+          "icon": {
+            "light": "./images/glimmer.svg",
+            "dark": "./images/glimmer.svg"
+          }
+        },
+        {
+          "id": "handlebars",
+          "extensions": [
+            ".hbs"
+          ],
+          "aliases": [
+            "handlebars",
+            "hbs"
+          ],
+          "configuration": "./languages/handlebars.configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "glimmer-js",
+          "path": "./syntaxes/glimmer-js.json",
+          "scopeName": "source.gjs"
+        },
+        {
+          "language": "glimmer-ts",
+          "path": "./syntaxes/glimmer-ts.json",
+          "scopeName": "source.gts"
+        },
+        {
+          "label": "Handlebars (Ember)",
+          "language": "handlebars",
+          "scopeName": "text.html.handlebars",
+          "path": "./syntaxes/handlebars.tmLanguage.json"
+        },
+        {
+          "injectTo": [
+            "source.js",
+            "source.ts"
+          ],
+          "scopeName": "inline.hbs",
+          "path": "./syntaxes/inline-hbs.json",
+          "embeddedLanguages": {
+            "meta.embedded.block.html": "text.html.handlebars"
+          }
+        },
+        {
+          "injectTo": [
+            "source.gts",
+            "source.gjs"
+          ],
+          "scopeName": "inline.template",
+          "path": "./syntaxes/inline-template.json",
+          "embeddedLanguages": {
+            "meta.js.embeddedTemplateWithoutArgs": "handlebars",
+            "meta.js.embeddedTemplateWithArgs": "handlebars"
+          }
+        }
+      ]
     },
     "icon": "icon.png"
-}
+  }
+  
