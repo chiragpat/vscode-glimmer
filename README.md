@@ -20,8 +20,6 @@ JavaScript and TypeScript. It supports two types of embedded template syntaxes:
 It also adds support for the `.gjs` and `.gts` file extensions, which are
 aliases to JavaScript and TypeScript respectively.
 
-Note: Syntax highlighting for handlebars requires installing the [Handlebars VSCode extension](https://marketplace.visualstudio.com/items?itemName=andrejunges.Handlebars)
-
 ## Developing
 
 ### What's in the folder
